@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задачи на работу с элементами JS</title>
+</head>
+<body>
+<h1>Task №1</h1>
+<button onclick="alert('Hi!')">Push me</button>
+
+
+<h1>Task №2</h1>
+<button onclick=buttonClick()>Push me</button>
+<input type="text" value='???' id='input'>
+<script>
+    function buttonClick() {
+        let input = document.getElementById('input')
+        input.value = '!!!'
+    }
+</script>
+
+
+<h1>Task №3</h1>
+<button onclick=changeClick()>Push me</button>
+<input type="text" value='???' id='input2'>
+<script>
+    function changeClick () {
+       let  input = document.getElementById('input2')
+       alert(input.value)
+    }
+</script>
+</body>
+</html>
