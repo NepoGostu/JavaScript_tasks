@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Задачи на работу с элементами JS</title>
+    <title>
+      Tasks for JavaScript
+    </title>
 </head>
 <body>
-<h1>Task №1</h1>
+<h1>Task №1: alert at the push of a button</h1>
 <button onclick="alert('Hi!')">Push me</button>
 
 
-<h1>Task №2</h1>
+<h1>Task №2: change text in input</h1>
 <button onclick=buttonClick()>Push me</button>
 <input type="text" value='???' id='input'>
 <script>
@@ -20,13 +22,24 @@
 </script>
 
 
-<h1>Task №3</h1>
+<h1>Task №3: display via alert input by button</h1>
 <button onclick=changeClick()>Push me</button>
 <input type="text" value='???' id='input2'>
 <script>
     function changeClick () {
        let  input = document.getElementById('input2')
        alert(input.value)
+    }
+</script>
+<h1>Task №4: output the content of input squared</h1>
+<button onclick=buttonClick()>Push me</button>
+<input type="text"  id='input3'>
+<script>
+    function buttonClick() {
+        let input = document.getElementById('input3')
+        let number = Number(input.value)
+        let square = number*number
+        alert(square)
     }
 </script>
 </body>
